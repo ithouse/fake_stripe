@@ -32,8 +32,18 @@ module FakeStripe
 
     def self.boot(port = FakeStripe::Utils.find_available_port)
       instance = new
-      Capybara::Server.new(instance, port).tap { |server| server.boot }
+      retry_count = 10
+      begin
+        Capybara::Server.new(instance, port).tap { |server| server.boot }
+      rescue Errno::EADDRINUSE
+        retry_count -= 1
+        if retry_count > 0
+          port = FakeStripe::Utils.find_available_port
+          retry
+        end
+      end
     end
+
 
     def self.boot_once
       @@stripe_js_server ||= FakeStripe::StubStripeJS.boot(self.server_port)
