@@ -61,7 +61,7 @@
     "total_count": 1,
     "url": "/v1/accounts/acct_16vteKH0GjZwV0ke/external_accounts"
   },
-  "legal_entity": {
+  "individual": {
     "additional_owners": null,
     "address": {
       "city": "San Francisco",
@@ -106,10 +106,9 @@
   },
   "transfer_schedule": {"delay_days": 2, "interval": "daily"},
   "transfers_enabled": true,
-  "verification": {
+  "requirements": {
     "disabled_reason": null,
-    "due_by": null,
-    "fields_needed": [],
-    "contacted": false
+    "currently_due": [],
+    "past_due": []
   }
 }
