@@ -16,6 +16,10 @@
     "afn",
     "..."
   ],
+  "capabilities": {
+    "card_payments": "active",
+    "transfers": "active"
+  },
   "default_currency": "usd",
   "country": "US",
   "object": "account",
