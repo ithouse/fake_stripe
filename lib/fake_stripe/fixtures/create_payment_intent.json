@@ -1,0 +1,142 @@
+{
+  "id": "pi_1ExB8G2972K8UliNPYvZLH2Y",
+  "object": "payment_intent",
+  "amount": 1078,
+  "amount_capturable": 0,
+  "amount_received": 0,
+  "application": null,
+  "application_fee_amount": null,
+  "canceled_at": null,
+  "cancellation_reason": null,
+  "capture_method": "automatic",
+  "charges": {
+    "object": "list",
+    "data": [
+      {
+        "id": "ch_1GC6BR2972K8UliNPjk0V8Va",
+        "object": "charge",
+        "amount": 1000,
+        "amount_refunded": 0,
+        "application": null,
+        "application_fee": null,
+        "application_fee_amount": null,
+        "balance_transaction": null,
+        "billing_details": {"address":{"city":null,"country":null,"line1":null,"line2":null,"postal_code":"12345","state":null},"email":null,"name":null,"phone":null},
+        "captured": false,
+        "created": 1581694465,
+        "currency": "eur",
+        "customer": null,
+        "description": "Payment 10 for sel11 via zzz ",
+        "destination": "acct_1B4RgWBu1Sbs6FWK",
+        "dispute": null,
+        "disputed": false,
+        "failure_code": null,
+        "failure_message": null,
+        "fraud_details": {},
+        "invoice": null,
+        "livemode": false,
+        "metadata": {"sharetribe_transaction_id":"10","sharetribe_seller_id":"YDRZgTqext9C55vlCEE4mQ","sharetribe_payer_id":"FFyvBGHIWU6884vDTtAJmg","sharetribe_mode":"destination"},
+        "on_behalf_of": "acct_1B4RgWBu1Sbs6FWK",
+        "order": null,
+        "outcome": {"network_status":"approved_by_network","reason":null,"risk_level":"normal","risk_score":47,"seller_message":"Payment complete.","type":"authorized"},
+        "paid": true,
+        "payment_intent": "pi_1ExB8G2972K8UliNPYvZLH2Y",
+        "payment_method": "pm_1GC6BI2972K8UliNCeRQMnZ6",
+        "payment_method_details": {"card":{"brand":"visa","checks":{"address_line1_check":null,"address_postal_code_check":"pass","cvc_check":"pass"},"country":"US","exp_month":11,"exp_year":2022,"fingerprint":"VydWSWfZlV3fBXH4","funding":"credit","installments":null,"last4":"4242","network":"visa","three_d_secure":null,"wallet":null},"type":"card"},
+        "receipt_email": null,
+        "receipt_number": null,
+        "receipt_url": "https://pay.stripe.com/receipts/acct_103ZAW2972K8UliN/ch_1GC6BR2972K8UliNPjk0V8Va/rcpt_GjZKqJm5jzynJ2eYPhM4CTKNHLRRKqM",
+        "refunded": false,
+        "refunds": {"object":"list","data":[],"has_more":false,"total_count":0,"url":"/v1/charges/ch_1GC6BR2972K8UliNPjk0V8Va/refunds"},
+        "review": null,
+        "shipping": null,
+        "source": null,
+        "source_transfer": null,
+        "statement_descriptor": null,
+        "statement_descriptor_suffix": null,
+        "status": "succeeded",
+        "transfer_data": {"amount":900,"destination":"acct_1B4RgWBu1Sbs6FWK"},
+        "transfer_group": "group_pi_1ExB8G2972K8UliNPYvZLH2Y"
+      }
+    ],
+    "has_more": false,
+    "url": "/v1/charges?payment_intent=pi_1ExB8G2972K8UliNPYvZLH2Y"
+  },
+  "client_secret": "pi_1ExB8G2972K8UliNPYvZLH2Y_secret_iEUQtTVBqt0xFWUEG6Hwwv7Oy",
+  "confirmation_method": "manual",
+  "created": 1563362232,
+  "currency": "usd",
+  "customer": null,
+  "description": null,
+  "invoice": null,
+  "last_payment_error": {
+    "code": "payment_intent_payment_attempt_failed",
+    "doc_url": "https://stripe.com/docs/error-codes/payment-intent-payment-attempt-failed",
+    "message": "The latest payment attempt of this PaymentIntent has expired. You can provide payment_method_data or a new PaymentMethod to attempt to fulfill this PaymentIntent again.",
+    "payment_method": {
+      "id": "pm_1ExB8B2972K8UliNin9TCW6o",
+      "object": "payment_method",
+      "billing_details": {
+        "address": {
+          "city": null,
+          "country": null,
+          "line1": null,
+          "line2": null,
+          "postal_code": "12345",
+          "state": null
+        },
+        "email": null,
+        "name": null,
+        "phone": null
+      },
+      "card": {
+        "brand": "visa",
+        "checks": {
+          "address_line1_check": null,
+          "address_postal_code_check": "unchecked",
+          "cvc_check": "unchecked"
+        },
+        "country": "DE",
+        "exp_month": 11,
+        "exp_year": 2022,
+        "fingerprint": "1qilIvzXDqZCbNQA",
+        "funding": "credit",
+        "generated_from": null,
+        "last4": "3184",
+        "three_d_secure_usage": {
+          "supported": true
+        },
+        "wallet": null
+      },
+      "created": 1563362227,
+      "customer": null,
+      "livemode": false,
+      "metadata": {},
+      "type": "card"
+    },
+    "type": "invalid_request_error"
+  },
+  "livemode": false,
+  "metadata": {},
+  "next_action": null,
+  "on_behalf_of": null,
+  "payment_method": null,
+  "payment_method_options": {
+    "card": {
+      "installments": null,
+      "request_three_d_secure": "automatic"
+    }
+  },
+  "payment_method_types": [
+    "card"
+  ],
+  "receipt_email": null,
+  "review": null,
+  "setup_future_usage": null,
+  "shipping": null,
+  "statement_descriptor": null,
+  "statement_descriptor_suffix": null,
+  "status": "requires_capture",
+  "transfer_data": null,
+  "transfer_group": null
+}
